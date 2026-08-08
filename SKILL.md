@@ -1,6 +1,6 @@
 ---
 name: ai-learning-coach
-description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）。Use when the user wants to learn AI or English systematically, start or continue a daily learning session, get today's task, review progress, do a Feynman drill or English speaking practice, take the 3-question self-test, update learning records (PROFILE/SYSTEM/HANDOFF), hand off learning to another AI tool, initialize a new learning archive, or check off a subject's gates (AI: 能讲清5分钟/能亲手演示/能答3追问; English: 能听清/能说/能读). Triggers in Chinese: 教我学 AI、今天学什么、继续学习、帮我复习、通关验收、更新学习档案、交接给另一个 AI、做任务卡、记痛点日志、学英语、练口语、音标、纠音、英语对话."
+description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）。Use when the user wants to learn AI or English systematically, start or continue a daily learning session, get today's task, review progress, do a Feynman drill or English speaking practice, take the 3-question self-test, update learning records (PROFILE/SYSTEM/HANDOFF), hand off learning to another AI tool, initialize a new learning archive, generate a ChatGPT Live practice card, or check off a subject's gates (AI: 能讲清5分钟/能亲手演示/能答3追问; English: 能听清/能说/能读). Triggers in Chinese: 教我学 AI、今天学什么、继续学习、帮我复习、通关验收、更新学习档案、交接给另一个 AI、做任务卡、记痛点日志、学英语、练口语、音标、纠音、英语对话、Live 练习卡."
 ---
 
 # AI 学习教练（ai-learning-coach）
@@ -39,6 +39,7 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 - 引导费曼输出：让学员把当天内容讲给你听，你扮演零基础学员只提问、不代答；
 - 每次学习结束给 3 道自测题并当场批改；答不出的回读补漏；
 - 英语线额外要求：口语练习必须留下**录音证据**（学员自己录，AI 不能代替）；AI 扮演对话/纠音陪练，只纠最严重的 3 个问题，不逐句挑错；
+- 学员要用 ChatGPT Live 实时练习时：按 `references/live-mode.md` 生成 Live 练习卡（模板 `assets/templates/live-session-card.md`），练完把摘要落盘；
 - 不替学员做关键决策（选课顺序、开课日期、验收判定），只给建议和证据整理。
 
 ### 4. 结束（全部完成才算交接）
@@ -61,8 +62,10 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 
 - `references/protocol.md`：完整协议（五步学习循环、21 天节奏、跨 AI 交接话术、常见陷阱）——辅导前应通读；
 - `references/english-protocol.md`：英语科目协议（90 天路线、英语三关、录音证据、AI 陪练角色）——英语线辅导前必读；
+- `references/live-mode.md`：ChatGPT Live 实时陪练协议（五个陪练模式话术、每日闭环四步、证据纪律）——学员要开 Live 练习时必读；
 - `assets/templates/daily-task-card.md`：每日任务卡模板（生成当天任务时用）；
 - `assets/templates/daily-card-english.md`：英语每日任务卡模板（音标/朗读/精听/复述/对话，含录音打勾）；
+- `assets/templates/live-session-card.md`：Live 练习卡模板（生成 Live 会话开场话术与记录表）；
 - `assets/templates/topic-bank.md`：英语话题库模板（每周一个话题，练到能自由说 1–2 分钟）；
 - `assets/templates/weekly-review.md`：周复盘模板（每周 3 问）；
 - `assets/templates/pain-log.md`：痛点日志四行模板；
