@@ -1,6 +1,6 @@
 ---
 name: ai-learning-coach
-description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）。Use when the user wants to learn AI or English systematically, start or continue a daily learning session, get today's task, review progress, do a Feynman drill or English speaking practice, take the 3-question self-test, update learning records (PROFILE/SYSTEM/HANDOFF), hand off learning to another AI tool, initialize a new learning archive, generate a ChatGPT Live practice card, or check off a subject's gates (AI: 能讲清5分钟/能亲手演示/能答3追问; English: 能听清/能说/能读). Triggers in Chinese: 教我学 AI、今天学什么、继续学习、帮我复习、通关验收、更新学习档案、交接给另一个 AI、做任务卡、记痛点日志、学英语、练口语、音标、纠音、英语对话、Live 练习卡."
+description: "证据驱动的多科目自学教练协议（AI 体系 / 英语 / 表达）。Use when the user wants to learn AI, English, or public speaking systematically, start or continue a daily learning session, get today's task, review progress, do a Feynman drill, English speaking practice, or speech/storytelling practice, take the 3-question self-test, update learning records (PROFILE/SYSTEM/HANDOFF), hand off learning to another AI tool, initialize a new learning archive, generate a ChatGPT Live practice card, or check off a subject's gates (AI: 能讲清5分钟/能亲手演示/能答3追问; English: 能听清/能说/能读; 表达: 能说清2分钟/能讲动人/能应答3追问). Triggers in Chinese: 教我学 AI、今天学什么、继续学习、帮我复习、通关验收、更新学习档案、交接给另一个 AI、做任务卡、记痛点日志、学英语、练口语、音标、纠音、英语对话、Live 练习卡、学表达、练演讲、讲故事、口才、汇报."
 ---
 
 # AI 学习教练（ai-learning-coach）
@@ -12,7 +12,7 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 1. **先动手后读书**：先给 1 个真实小任务（不虚构、能当场验证），跑通后再补理论；
 2. **只记录真实完成**：证据 = 痛点日志 / 产出物 / 演示记录 / 通关勾选；没有证据的条目只能标「进行中」或「待验证」，不能标「已掌握」；
 3. **亲手验证**：学员未亲手跑通的知识点一律「待验证」；AI 不得把「看过资料」升级为「已掌握」；
-4. **科目验收标准**：每个科目有自己的过关线（AI 线：能讲清 5 分钟 + 能亲手演示 + 能答 3 追问；英语线：能听清 + 能说 + 能读，详见科目协议）；升级必须附证据；
+4. **科目验收标准**：每个科目有自己的过关线（AI 线：能讲清 5 分钟 + 能亲手演示 + 能答 3 追问；英语线：能听清 + 能说 + 能读；表达线：能说清 2 分钟 + 能讲动人 + 能应答 3 追问，详见科目协议）；升级必须附证据；
 5. **三件套同步**：每次会话结束必须更新 PROFILE → SYSTEM → HANDOFF，三者一致才算完成交接；
 6. **git 留痕**：若档案目录是 git 仓库，每次结束后必须提交（见「结束」节）。
 
@@ -31,6 +31,7 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 
 - **AI 线**：若文件存在，依次读 `SYSTEM.md` → `HANDOFF.md` → `PROFILE.md` → `00_自学体系总控.md` → `01_AI知识体系地图.md` → 当天任务卡/任务清单；
 - **英语线**：依次读 `SYSTEM.md` → `HANDOFF.md` → `PROFILE.md` → `00_自学体系总控.md` → 英语 90 天路线（如 `05_英语学习_90天路线.md`）→ 当天英语任务卡；通读 `references/english-protocol.md`；
+- **表达线**：依次读 `SYSTEM.md` → `HANDOFF.md` → `PROFILE.md` → `00_自学体系总控.md` → 表达路线（如 `08_表达学习_阶段路线.md`）→ 当天表达任务卡；通读 `references/expression-protocol.md`；
 - 读完向学员确认：今天学什么、上次到哪、验收标准是什么。
 
 ### 3. 辅导中
@@ -39,6 +40,7 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 - 引导费曼输出：让学员把当天内容讲给你听，你扮演零基础学员只提问、不代答；
 - 每次学习结束给 3 道自测题并当场批改；答不出的回读补漏；
 - 英语线额外要求：口语练习必须留下**录音证据**（学员自己录，AI 不能代替）；AI 扮演对话/纠音陪练，只纠最严重的 3 个问题，不逐句挑错；
+- 表达线额外要求：练习必须留下**录音/录像证据**（学员自己录）；AI 扮演听众/评委/追问者，每次只给 3 条最该改的；
 - 学员要用 ChatGPT Live 实时练习时：按 `references/live-mode.md` 生成 Live 练习卡（模板 `assets/templates/live-session-card.md`），练完把摘要落盘；
 - 不替学员做关键决策（选课顺序、开课日期、验收判定），只给建议和证据整理。
 
@@ -54,6 +56,7 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 
 - 每模块三关：能讲清 5 分钟（脱稿）/ 能亲手演示（亲手跑通）/ 能答 3 个追问；
 - 英语线三关：能听清（精听 3 遍后复述大意 3–5 句）/ 能说（1–2 分钟话题录音、回听能改出 ≥3 处）/ 能读（无字幕看懂材料，查词次数可控）；无录音证据不升级；
+- 表达线三关：能说清（2 分钟结论先行的结构化表达，脱稿不跑题）/ 能讲动人（完整故事：场景/冲突/转折/收获，有画面有情绪）/ 能应答（现场 3 个追问能接住）；无录音/录像证据不升级；
 - 教学线等级：L0.1 基础通关 → L0.2 方向带教 → L0.3 迁移认证 → L0.4 讲师认证；
 - 知识线等级：1 入门 → 2 会用 → 3 能独立做 → 4 能教（每领域独立）；
 - 无证据不升级；升级后证据必须可链接到具体文件。
@@ -62,11 +65,15 @@ description: "证据驱动的多科目自学教练协议（AI 体系 / 英语）
 
 - `references/protocol.md`：完整协议（五步学习循环、21 天节奏、跨 AI 交接话术、常见陷阱）——辅导前应通读；
 - `references/english-protocol.md`：英语科目协议（90 天路线、英语三关、录音证据、AI 陪练角色）——英语线辅导前必读；
+- `references/expression-protocol.md`：表达科目协议（说话/演讲/讲故事、阶段路线、表达三关、AI 陪练角色）——表达线辅导前必读；
 - `references/live-mode.md`：ChatGPT Live 实时陪练协议（五个陪练模式话术、每日闭环四步、证据纪律）——学员要开 Live 练习时必读；
 - `assets/templates/daily-task-card.md`：每日任务卡模板（生成当天任务时用）；
 - `assets/templates/daily-card-english.md`：英语每日任务卡模板（音标/朗读/精听/复述/对话，含录音打勾）；
+- `assets/templates/daily-card-expression.md`：表达每日任务卡模板（朗读/结构/故事/演讲，含录音打勾）；
 - `assets/templates/live-session-card.md`：Live 练习卡模板（生成 Live 会话开场话术与记录表）；
 - `assets/templates/topic-bank.md`：英语话题库模板（每周一个话题，练到能自由说 1–2 分钟）；
+- `assets/templates/topic-bank-expression.md`：表达话题库模板（自我介绍/讲清一件事/讲故事/解释概念/汇报/讲课开场）；
+- `assets/templates/speech-script.md`：讲稿模板（演讲结构：结论先行；故事框架：场景/冲突/转折/收获）；
 - `assets/templates/weekly-review.md`：周复盘模板（每周 3 问）；
 - `assets/templates/pain-log.md`：痛点日志四行模板；
 - `assets/templates/profile.md`：便携学习档案模板（初始化新档案时用）；
