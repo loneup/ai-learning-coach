@@ -1,4 +1,4 @@
 interface:
-  display_name: "AI 学习教练"
-  short_description: "按证据驱动的学习协议辅导每日学习、更新档案并提交留痕"
-  default_prompt: "Use $ai-learning-coach to guide my daily AI learning session and update my learning records."
+  display_name: "AI 学习教练（多科目）"
+  short_description: "证据驱动的多科目学习协议：AI 体系与英语共用一份档案"
+  default_prompt: "Use $ai-learning-coach to guide my daily learning session (AI or English) and update my learning records."
